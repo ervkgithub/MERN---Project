@@ -20,15 +20,9 @@
 
 ### ` npm run dev `
 
-# Client - Run Below Command to create app and install all dependencies
+# GraphQL Query for Data fetch from database
 
-### `npx create-react-app client`
-
-### `npm i @apollo/client graphql react-router-dom react-icons`
-
-# GraphQL Query for Data from MongoDB
-
-// Add client
+# Add client
 
 mutation{
   addClient(name:"Test 1", email:"test1.email@test.com", phone:"12345"){
