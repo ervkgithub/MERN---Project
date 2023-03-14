@@ -4,57 +4,57 @@ import React from "react";
 const Header = () => {
   return (
     <header>
-      <div class="flex justify-center  ">
-        <nav class="self-center w-full">
-          <div class="flex flex-col lg:flex-row justify-around items-center ">
-            <h1 class="uppercase pl-5 py-4 text-lg font-sans font-bold">
+      <div className="flex justify-center  ">
+        <nav className="self-center w-full">
+          <div className="flex flex-col lg:flex-row justify-around items-center ">
+            <h1 className="uppercase pl-5 py-4 text-lg font-sans font-bold">
               Logo
             </h1>
-            <ul class="hidden lg:flex items-center text-[18px] font-semibold pl-32">
-              <li class="hover:underline  underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5">
+            <ul className="hidden lg:flex items-center text-[18px] font-semibold pl-32">
+              <li className="hover:underline  underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5">
                 <a href="#">Home</a>
               </li>
-              <li class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5">
+              <li className="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5">
                 <a href="#">About</a>
               </li>
-              <li class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5">
+              <li className="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5">
                 <a href="#">Clients</a>
               </li>
-              <li class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5">
+              <li className="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5">
                 <a href="#">Projects</a>
               </li>
             </ul>
-            <div class=" text-center text-base pr-5  inline-flex">
+            <div className=" text-center text-base pr-5  inline-flex">
               {" "}
               <a
                 href="#"
-                class="w-8 h-8 inline-block rounded-full pt-[6px] hover:text-blue-500"
+                className="w-8 h-8 inline-block rounded-full pt-[6px] hover:text-blue-500"
               >
-                <i class="fa fa-twitter"></i>
+                <i className="fa fa-twitter"></i>
               </a>{" "}
               <a
                 href="#"
-                class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"
+                className="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"
               >
-                <i class="fa fa-instagram"></i>
+                <i className="fa fa-instagram"></i>
               </a>{" "}
               <a
                 href="#"
-                class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"
+                className="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"
               >
-                <i class="fa fa-facebook"></i>
+                <i className="fa fa-facebook"></i>
               </a>{" "}
               <a
                 href="#"
-                class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"
+                className="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"
               >
-                <i class="fa fa-google"></i>
+                <i className="fa fa-google"></i>
               </a>{" "}
               <a
                 href="#"
-                class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"
+                className="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"
               >
-                <i class="fa fa-linkedin"></i>
+                <i className="fa fa-linkedin"></i>
               </a>{" "}
             </div>
           </div>

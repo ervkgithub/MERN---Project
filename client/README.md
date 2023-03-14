@@ -7,3 +7,7 @@
 ### `npm run start`
 
 ### `npm install -D tailwindcss`
+
+# Update below in config file for tailwind css
+
+### `content: ["./src/**/*.{html,js}"],` into `content: ["./src/**/*.{js,jsx,ts,tsx}"]`
