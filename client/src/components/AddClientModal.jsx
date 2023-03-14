@@ -21,11 +21,11 @@ const AddClientModal = () => {
         {
             return alert('please fill all field');
         }
+
         addClient(name, email, phone);
-        const myModalEl = document.getElementById("addClientModal");
-        myModalEl.addEventListener("hidden.te.modal", (e) => {
-            myModalEl.hide()
-        });
+
+        var link = document.getElementById('closeClientModal');
+        link.click();
 
         setName('');
         setEmail('');
@@ -35,9 +35,10 @@ const AddClientModal = () => {
 
   return (
     <>
-    <div className="inline-flex mt-8 mb-4 rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
+
+    <div className="inline-flex mr-3 mt-8 mb-4 rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
       <FaUser className="text-white mt-1" />
-      <button className="text-white ml-2"
+      <button className="text-white ml-2 "
         type="button"
         data-te-toggle="modal"
         data-te-target="#addClientModal"
@@ -47,12 +48,13 @@ const AddClientModal = () => {
          Add Client
       </button>
       </div>
+
       <div
         data-te-modal-init
         className="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
         id="addClientModal"
         tabIndex="-1"
-        aria-labelledby="exampleModalLabel"
+        aria-labelledby="addClientModal"
         aria-hidden="true"
       >
         <div
@@ -155,6 +157,7 @@ const AddClientModal = () => {
             </div>
             <div className="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
               <button
+                id="closeClientModal"
                 type="button"
                 className="inline-block rounded bg-primary-100 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
                 data-te-modal-dismiss
@@ -163,14 +166,6 @@ const AddClientModal = () => {
               >
                 Close
               </button>
-              {/* <button
-                type="button"
-                className="ml-1 inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
-                data-te-ripple-init
-                data-te-ripple-color="light"
-              >
-                Save Client
-              </button> */}
             </div>
           </div>
         </div>

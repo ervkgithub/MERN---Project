@@ -6,3 +6,13 @@ input{
     border: 1px solid #000;
     border-radius: 6px;
 }
+
+.icon{
+    display: inline-block;
+}
+
+.img{
+    height: 100px !important;
+    width: 100%;
+    object-fit: cover;
+}

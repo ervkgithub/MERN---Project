@@ -31,7 +31,7 @@ const ClientRow = ({ client }) => {
         <td>
           <button
             onClick={deleteClient}
-            className="inline-block rounded-full bg-primary p-2 uppercase leading-normal text-red"
+            className="inline-block rounded-full bg-red-900 p-2 uppercase leading-normal text-white"
           >
             <FaTrash className="text-red" />
           </button>
